@@ -101,4 +101,3 @@ summary(test)
 test$Survived <- predict(trainedmodel, newdata = test)
 submit <- test[,c("PassengerId", "Survived")]
 write.table(submit, file = "submit.csv", col.names = TRUE, row.names = FALSE, sep = ",")
-
